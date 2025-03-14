@@ -11,6 +11,8 @@ Meta Prompt Playground is a desktop application that allows you to:
 - View reasoning sections separately from the main output
 - Save and load prompt sets for later use
 
+![Meta Prompt Playground Screenshot](public/screenshot.png)
+
 ## Features
 
 - Side-by-side prompt editors with default meta prompt
@@ -41,9 +43,9 @@ python main.py
    - Use the "Reset to Default" button to restore the original prompt
 
 2. **Generating Outputs**: Use the buttons at the bottom to generate outputs.
-   - "Generate Output A" - Generate output for the left prompt
-   - "Generate Output B" - Generate output for the right prompt
-   - "Generate Both Outputs" - Generate outputs for both prompts
+   - "Generate A" - Generate output for the left prompt
+   - "Generate B" - Generate output for the right prompt
+   - "Generate Both" - Generate outputs for both prompts
 
 3. **Viewing Outputs and Reasoning**: The bottom section contains tabbed views for each side.
    - "Output" tab - Shows the main output with any reasoning sections removed
@@ -61,29 +63,3 @@ The application also supports a command-line interface for backwards compatibili
 ```bash
 python main.py --cli "Your prompt here"
 ```
-
-## Development
-
-The project is organized as follows:
-```
-.
-├── main.py                   # Main entry point
-├── src
-│   ├── helpers/              # Utility functions
-│   │   ├── reasoning_parser.py
-│   ├── prompts/              # Prompt templates
-│   │   ├── default_meta_prompt.py
-│   ├── saved_prompts/        # Directory for saved prompts
-│   ├── service/              # Service code
-│   │   ├── caption_creator.py
-│   └── ui/                   # PyQt6 UI code
-│       ├── main_window.py
-│       ├── comparison_view.py
-│       ├── prompt_editor.py
-│       ├── output_display.py
-│       └── reasoning_display.py
-```
-
-## License
-
-AgenAI © 2025 
