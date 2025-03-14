@@ -1,4 +1,4 @@
-# Meta Prompt Playground
+# 🦊 Meta Prompt Playground
 
 A tool for creating and comparing meta prompts in a side-by-side format.
 
@@ -10,6 +10,7 @@ Meta Prompt Playground is a desktop application that allows you to:
 - Generate and view outputs for each prompt
 - View reasoning sections separately from the main output
 - Save and load prompt sets for later use
+- Uses OpenAI gpt-4o
 
 ![Meta Prompt Playground Screenshot](public/screenshot.png)
 
@@ -55,11 +56,3 @@ python main.py
 4. **Saving/Loading**: Use the File menu or toolbar buttons to:
    - Save both prompts, outputs, and reasoning to a JSON file
    - Load previously saved prompt sets
-
-## Command Line Interface
-
-The application also supports a command-line interface for backwards compatibility:
-
-```bash
-python main.py --cli "Your prompt here"
-```
